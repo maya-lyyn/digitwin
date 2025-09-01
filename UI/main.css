@@ -1,0 +1,101 @@
+.main-value{
+	font-weight: normal;
+	margin-left:10px;
+}
+/*Homepage Table*/
+.tg {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.tg td {
+	font-size: 1rem;
+	overflow: hidden;
+	padding: 12px 5px;
+}
+
+.tg .tg-left {
+	border-color: inherit;
+	text-align: right;
+	vertical-align: top;
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+.tg .tg-right {
+	border-color: inherit;
+	text-align: left;
+	vertical-align: top;
+	word-break: normal;
+}
+@media (min-width: 768px) {
+  .modal-xl {
+	width: 95%;
+   max-width:1260px;
+  }
+}
+.tableFixHead {
+	overflow-x: scroll;
+	overflow-y: scroll;
+	max-height:75vh;
+	
+}
+.tableFixHead thead th {
+	position: sticky;
+	top: -1;
+	z-index: 1;
+	text-align:left;
+}
+
+.tableFixHead table {
+	table-layout:fixed;
+	word-wrap: break-word;
+}
+
+.tableFixHead table {
+	width:2500px;
+}
+
+
+.tableFixHead td, 
+.tableFixHead th {
+	text-align:left;
+}
+
+.tableFixHead tr>:nth-child(1){
+	width: 75px !important;
+	white-space:normal;
+}
+
+.train-form label{
+	width:260px;
+	justify-content: flex-end;
+	padding-right:20px;
+	
+}
+.train-form-right label{
+	width:300px;
+	justify-content: flex-end;
+	padding-right:20px;
+	
+}
+.doc-but{
+	margin-left:25px;
+}
+.round-time-bar div {
+  height: 8px;
+  background: linear-gradient(to bottom, red, #900000);
+}
+.round-time-bar-noerror div {
+  background: linear-gradient(to bottom, green, #009000);
+}
+@keyframes roundtime {
+  to {
+    /* More performant than animating `width` */
+    transform: scaleX(0);
+  }
+}
+.round-time-bar[data-style="smooth"] div {
+  animation: roundtime calc(var(--duration) * 1s) linear forwards;
+  transform-origin: middle center;
+}
